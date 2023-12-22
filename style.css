@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F7FDFC;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;;
+}
+
+.element-div {
+    width: 327px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin: 20px auto;
+}
+
+.logo-div {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: conic-gradient(
+        #3CBDB2 0% 25%,
+        #9ECD43 25% 50%,
+        #FFC624 50% 75%,
+        #F37920 75% 100%
+    );
+}
+
+.for-text {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.inspiring-text {
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.my-form {
+    background-color: white;
+    width: 327px;
+    margin: 15px auto;
+    box-shadow: 2px 2px 20px rgb(206, 202, 202);
+    padding-top: 15px;
+}
+
+input {
+    width: 295px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    height: 30px;
+}
+
+
+.first-last-name-div, .gender-dob-div, .weight-height-div, .activity-div, .password-div, .button-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+}
+
+
+button {
+    width: 303px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    height: 30px;
+    background-color: #2EC4B6;
+    border-color: transparent;
+    color: white;
+}
+
+.terms-outside {
+    text-align: center;
+    margin: 30px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.terms-inside {
+    display: none;
+}
+
+a {
+    color: #2EC4B6;
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main {
+        width: 1200px;
+        height: 650px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .element-div {
+        margin: auto 0;
+    }
+
+    .element-div > div {
+        margin-top: 20px;
+    }
+
+    .form-div {
+        margin: auto 0;
+    }
+
+    .my-form {
+        width: 580px;
+    }
+
+    .exe {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .exe input {
+        width: 238px;
+    }
+
+    .exe1 input {
+        width: 530px;
+    }
+
+    button {
+        width: 537px;
+        margin-bottom: 0;
+    }
+
+    .terms-outside {
+        display: none;
+    }
+
+    .terms-inside {
+        display: inline;
+        text-align: center;
+        font-weight: 500;
+        font-size: 14px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    .link-div {
+        width: 580px;
+        display: flex;
+        justify-content: center;
+    }
+}
